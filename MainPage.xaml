@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BomDiaGrupo.MainPage"
+             Shell.NavBarIsVisible="false">
+
+<StackLayout Orientation="Vertical"
+             HorizontalOptions="FillAndExpand"
+             VerticalOptions="FillAndExpand">
+ <Image Source="background.webp"
+        HorizontalOptions="FillAndExpand"/>    
+
+
+  <Label Text="Olá, seja Bem-Vindo(a)ao gerador de mensagens de Bom Dia!"  
+        TextColor="Black"
+        FontAttributes="Bold"
+        HorizontalTextAlignment="Center"
+        HorizontalOptions="FillAndExpand"/>
+
+<Button Text="GERAR"
+         Clicked="Button_Clicked"
+         Margin="10, 30"
+         FontSize="16"
+         FontAttributes="Bold"
+         TextColor="Black"
+         BackgroundColor="LightPink"
+         HorizontalOptions="FillAndExpand"/>
+
+ <Label Text="Mensagem:" 
+        Margin="10"
+        TextColor="Black"
+        FontAttributes="Bold"
+        HorizontalOptions="FillAndExpand"/>
+
+ <Frame HasShadow="False"
+        Margin="10"
+        BorderColor="Black"
+        CornerRadius="20">
+ <Label Text=""
+        Padding="10, 20"
+        TextColor="Black"
+        FontSize="20"
+        Margin="10"
+        x:Name="labelMsg"
+        HorizontalOptions="CenterAndExpand"/>
+</Frame>
+<Button Text="COMPARTILHAR"
+Clicked="Button_Clicked_1"
+         Margin="10, 30"
+         FontSize="16"
+         FontAttributes="Bold"
+         BackgroundColor="LightPink"
+         HorizontalOptions="FillAndExpand"/>
+
+ </StackLayout>        
+ 
+
+         
+
+</ContentPage>
